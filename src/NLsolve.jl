@@ -12,7 +12,7 @@ import Base.show,
        Base.getindex,
        Base.setindex!
 
-import Calculus.finite_difference_jacobian!
+import DiffEqDiffTools.finite_difference_jacobian!
 
 export DifferentiableMultivariateFunction,
        only_f!_and_fg!,

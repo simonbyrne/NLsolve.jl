@@ -36,7 +36,7 @@ function DifferentiableMultivariateFunction(f!; dtype::Symbol=:central)
             f!(x, fx)
             return fx
         end
-        finite_difference_jacobian!(f, x, fx, gx, dtype)
+        finite_difference_jacobian!(gx, f, x, Val{:central})
     end
     function g!(x, gx)
         fx = similar(x)
